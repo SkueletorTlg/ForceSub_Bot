@@ -48,7 +48,7 @@ def _check_member(client, message):
       if channel.startswith("-"):
           channel_url = client.export_chat_invite_link(int(channel))
       else:
-          channel_url = f"{channel}"
+          channel_url = f"https://t.me/{channel}"
       try:
         client.get_chat_member(channel, user_id)
       except UserNotParticipant:
@@ -104,7 +104,7 @@ def config(client, message):
           if input_str.startswith("-"):
               channel_url = client.export_chat_invite_link(int(input_str))
           else:
-              channel_url = f"{input_str}"
+              channel_url = f"https://t.me/{input_str}"
           message.reply_text(f"✅ **Forzar suscripción está habilitado**\n__Forzar suscripción está habilitado, todos los miembros del grupo deben suscribirse a este [canal]({channel_url}) para enviar mensajes en este grupo.__", disable_web_page_preview=True)
         except UserNotParticipant:
           message.reply_text(f"❗ **No soy un administrador en el canal**\n__No soy un administrador en el [canal]({channel_url}). Agrégame como administrador para habilitar ForceSubscribe.__", disable_web_page_preview=True)
@@ -118,7 +118,7 @@ def config(client, message):
         if my_channel.startswith("-"):
             channel_url = client.export_chat_invite_link(int(input_str))
         else:
-            channel_url = f"{my_channel}"
+            channel_url = f"https://t.me/{my_channel}"
         message.reply_text(f"✅ **Forzar suscripción está habilitado en este chat.**\n__Para este [Canal]({channel_url})__", disable_web_page_preview=True)
       else:
         message.reply_text("❌ **Forzar suscripción está deshabilitado en este chat.**")
