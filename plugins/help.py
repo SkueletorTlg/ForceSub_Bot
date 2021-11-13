@@ -125,7 +125,7 @@ def _help(client, message):
         except Exception:
             client.send_message(
                 chat_id=message.chat.id,
-                text="Hola, por favor, utiliza este comando en privado.\nPara más ayuda pregunte a [Skueletor](https://t.me/DKzippO).",
+                text="Hola, por favor, este comando es sólamente para el creador del bot.\nPara más ayuda pregunte a [Skueletor](https://t.me/DKzippO).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
