@@ -10,9 +10,9 @@
         "Forcesub",
         "ForceSubBot"
     ],
-    "repository": "https://github.com/Jigarvarma2005/ForceSub_Bot",
-    "website": "https://t.me/UniversalBotsUpdate",
-    "success_url": "https://t.me/UniversalBotsUpdate",
+    "repository": "https://github.com/SkueletorTlg/ForceSub_Bot",
+    "website": "https://t.me/AsAEcos",
+    "success_url": "https://t.me/AsAEcos",
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
@@ -35,7 +35,7 @@
             "required": false
         },
         "SUDO_USERS": {
-            "description": "Sudo users (Goto @JVToolsBot and send /id to get your id)",
+            "description": "Sudo users (Goto @usinfobot and send /id to get your id)",
             "value": "",
             "required": false
         }
